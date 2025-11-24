@@ -1,0 +1,5 @@
+"The following should be noted for the project to run correctly:
+
+1. The html code should all be placed in a 'code' folder on their own
+2. The css and js code are to be placed specifically 1 level above the html
+3. The logo should be placed into a separate 'asset folder' in the same level as the css and js 
