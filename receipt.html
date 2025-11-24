@@ -1,0 +1,33 @@
+<!--Brandon Hibbert 2304765 | brandonbhibbert@students.utech.edu.jm | Friday 8AM-->
+
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Receipt - GreenCycle</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <img src="../Assets/logo.png" alt="Logo" class="gcrlogo" />
+            <div class="brand"><a href="index.html">GreenCycle Recycling</a></div>
+        </header>
+        <main class="container">
+            <h1>Your Receipt</h1>
+            <pre id="receipt-area" class="receipt"></pre>
+            <button onclick="window.print()" class="btn">Print Receipt</button>
+        </main>
+
+
+        <footer class="site-footer">
+            <p>&copy; GreenCycle Recycling</p>
+        </footer>
+
+
+        <script>
+            const receipt = sessionStorage.getItem('finalReceipt') || 'Error loading receipt.';
+            document.getElementById('receipt-area').textContent = receipt;
+        </script>
+    </body>
+</html>

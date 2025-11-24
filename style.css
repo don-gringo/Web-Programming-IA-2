@@ -1,0 +1,161 @@
+/*Brandon Hibbert 2304765 | brandonbhibbert@students.utech.edu.jm | Friday 8AM*/
+
+:root{
+    --blue:#1e88e5;
+    --green:#2e7d32;
+    --white:#ffffff;
+    --max-width:1100px;
+    --gap:1rem;
+}
+
+body{
+    font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;
+    margin:0; color:#222;
+    background:#f4f7f6;
+}
+
+.container{
+    max-width:var(--max-width);
+    margin:1rem auto;
+    padding:0 1rem;
+}
+
+.site-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.75rem 1rem;
+    background:linear-gradient(90deg,var(--blue),var(--green));
+    color:var(--white);
+}
+
+.site-header .brand a{
+    color:var(--white);
+    text-decoration:none;
+    font-weight:700;
+    font-size:1.1rem;
+}
+
+.gcrlogo {
+    width: 100px;
+    height: auto; 
+}
+
+.nav a{
+    margin-left:0.8rem;
+    color:var(--white);
+    text-decoration:none;
+}
+
+.hero{
+    padding:2rem;
+    background:linear-gradient(180deg, rgba(30,136,229,0.08), rgba(46,125,50,0.04));
+    border-radius:8px;
+}
+
+.hero h1{
+    margin:0 0 .5rem 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:.5rem 1rem;
+    border-radius:6px; 
+    background:var(--blue);
+    color:var(--white); text-decoration:none;
+    border:none; cursor:pointer;
+}
+
+.btn.alt{
+    background:#ddd;
+    color:#111;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:var(--gap);
+}
+
+.product{
+    background:#fff;
+    padding:1rem;
+    border-radius:8px;
+    box-shadow:0 1px 3px rgba(0,0,0,.06);
+}
+
+.price{
+    font-weight:700;
+}
+
+.site-footer{
+    padding:1rem;
+    text-align:center;
+    margin-top:1.5rem;
+}
+
+.about-card, .quick-info{
+    background:#fff;
+    padding:1rem;
+    border-radius:8px;
+    margin-top:1rem;
+}
+
+.footnote{
+    background:#fff;
+    padding:1rem;
+    border-radius:8px;
+    margin-top:1rem;
+}
+
+.auth{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+}
+
+.card{
+    background:#fff;
+    padding:1rem;
+    border-radius:8px;
+}
+
+input[type="number"], input[type="text"], input[type="email"], input[type="password"] {
+    width:100%;
+    padding:.4rem;
+    margin-top:.25rem;
+    margin-bottom:.5rem;
+}
+
+.cart-actions{
+    display:flex;
+    gap:1rem;
+    margin-top:1rem;}
+
+.checkout-form{
+    margin-top:1rem;
+    background:#fff;
+    padding:1rem;
+    border-radius:8px;
+}
+
+.hidden{
+    display:none;
+}
+
+.receipt{
+    background:#fff;
+    padding:1rem;
+    border-radius:8px;
+    margin-top:1rem;
+    white-space:pre-wrap;
+}
+
+@media(min-width:800px){
+    .auth{grid-template-columns:1fr 1fr;}
+}
+
+.apa-entry{
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}

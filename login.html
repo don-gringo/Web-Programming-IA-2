@@ -1,0 +1,58 @@
+<!--Brandon Hibbert 2304765 | brandonbhibbert@students.utech.edu.jm | Friday 8AM-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Account - GreenCycle</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <img src="../Assets/logo.png" alt="Logo" class="gcrlogo" />
+
+            <div class="brand"><a href="index.html">GreenCycle Recycling</a></div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="login.html" id="account-link">Login</a>
+                <a href="references.html">References</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="auth">
+                <div class="card">
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                    <label>Username: <input id="login-username" required /></label>
+                    <label>Password: <input id="login-password" type="password" required /></label>
+                    <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <h2>Register</h2>
+                    <form id="registerForm">
+                    <label>Name: <input id="reg-name" required /></label>
+                    <label>ID Number: <input id="reg-id" required /></label>
+                    <label>Address: <input id="reg-address" required /></label>
+                    <label>Phone: <input id="reg-phone" required /></label>
+                    <label>Email: <input id="reg-email" type="email" required /></label>
+                    <label>Username: <input id="reg-username" required /></label>
+                    <label>Password: <input id="reg-password" type="password" required /></label>
+                    <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; GreenCycle Recycling</p>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
+</html>

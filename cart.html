@@ -1,0 +1,54 @@
+<!--Brandon Hibbert 2304765 | brandonbhibbert@students.utech.edu.jm | Friday 8AM-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Cart - GreenCycle</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+                <img src="../Assets/logo.png" alt="Logo" class="gcrlogo" />
+            
+                <div class="brand"><a href="index.html">GreenCycle Recycling</a></div>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                    <a href="login.html" id="account-link">Login</a>
+                    <a href="references.html">References</a>
+                </nav>
+        </header>
+
+        <main class="container">
+            <h1>Your Cart</h1>
+            <div id="cart-area"></div>
+            <div id="cart-actions" class="cart-actions">
+                <button id="clear-cart" class="btn">Clear All</button>
+                <button id="checkout" class="btn">Proceed to Checkout</button>
+            </div>
+
+            <div id="checkout-form" class="checkout-form hidden">
+                <h2>Checkout</h2>
+                <form id="checkoutForm">
+                    <label>Full Name: <input required id="ship-name" /></label>
+                    <label>Contact Number: <input required id="ship-phone" /></label>
+                    <label>Address: <input required id="ship-address" /></label>
+                    <div class="checkout-summary" id="checkout-summary"></div>
+                    <button type="submit" class="btn">Pay</button>
+                    <button type="button" id="cancel-checkout" class="btn alt">Cancel</button>
+                </form>
+        </div>
+
+            <div id="receipt" class="receipt hidden"></div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; GreenCycle Recycling</p>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
+</html>
